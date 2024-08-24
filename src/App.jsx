@@ -3,6 +3,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addTodo, deleteTodo } from "./redux/modules/todos";
 import TodoListWithReducer from "./components/Reducer";
+import ContextWithReducer from "./components/ContextWithReducer";
 
 function App() {
   const todos = useSelector((state) => state.todos.todos);
@@ -46,6 +47,7 @@ function App() {
       })}
 
       <TodoListWithReducer />
+      <ContextWithReducer />
     </div>
   );
 }

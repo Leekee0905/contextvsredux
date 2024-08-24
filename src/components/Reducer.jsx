@@ -20,7 +20,7 @@ const TodoListWithReducer = () => {
 
   return (
     <>
-      <h1>TodoList with Reducer</h1>
+      <h1 style={{ marginTop: "50px" }}>TodoList with Reducer</h1>
       <input value={text} onChange={(e) => setText(e.target.value)} />
       <button
         onClick={() => {
